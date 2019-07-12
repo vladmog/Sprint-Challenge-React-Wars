@@ -12,7 +12,7 @@ exports[`<App /> should match snapshot 1`] = `
     </h1>
   </div>
   <div
-    className="sc-bxivhb cHmMiG"
+    className="sc-bxivhb pvEHR"
   />
 </div>
 `;

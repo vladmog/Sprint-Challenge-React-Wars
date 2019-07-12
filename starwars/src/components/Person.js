@@ -30,22 +30,19 @@ function Person (props) {
 
     useEffect(() => {
         axios.get(props.person.homeworld)
-          .then (res => setHomeWorld(res.data.name) //why can't I console.log before this setPeople?
+          .then (res => setHomeWorld(res.data.name)
           )
           .catch (err => console.log(err))
       }, [])
 
-      
+    let message = `${props.person.name} whose eyes were ${props.person.eye_color} as the snow on ${homeworld}`
     return (
-        props.person.gender === "male" ? (<MaleDiv>
-            <p>{props.person.name} whose eyes were {props.person.eye_color} as snow on {homeworld} </p>
-        </MaleDiv>) : (
-            props.person.gender === "female" ? ( <FemaleDiv>
-                <p>{props.person.name} whose eyes were {props.person.eye_color} as snow on {homeworld} </p>
-            </FemaleDiv>) : <ThingDiv>
-            <p>{props.person.name} whose eyes were {props.person.eye_color} as snow on {homeworld} </p>
-        </ThingDiv>
-        ) 
+        props.person.gender === "male" 
+            ? <MaleDiv><p>{message}</p></MaleDiv> 
+            : props.person.gender === "female" 
+                ? <FemaleDiv> <p>{message}</p></FemaleDiv> 
+                : <ThingDiv><p>{message}</p></ThingDiv>
+             
         
     )
 }
