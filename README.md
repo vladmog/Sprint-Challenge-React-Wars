@@ -24,30 +24,47 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [x] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+  React is a library that allows for the compartmentalization of code into individual components such that code can be
+  broken up into manageable chunks.
 
-- [ ] Describe state.
 
-- [ ] Describe props.
+- [x] What does it mean to _think_ in react?
+
+  Thinking in react is thinking of code in individual chunks and the flow of data from component to component via props, state, and importing/exporting that is necessary for a program written with React to function properly.
+
+
+- [x] Describe state.
+
+  State is an object that stores data to be used by a class component and its children. 
+
+
+- [x] Describe props.
+
+  Props is an object that acts as the carrier of all a parent's chosen functions and data necessary for its child component(s)
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+    Side effects affect code outside of the function that's being executed. We sync effects by the second argument that we pass into the useEffect() function.
+        __ = updates constantly
+        [] = update on mount only
+       [x] = update when x changes
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!)
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` or `npm install` to retrieve all needed dependencies.
-- [ ] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
-- [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
+- [x] Create a forked copy of this project.
+- [x] Add PM as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!)
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Change directories into `./starwars` (`cd starwars`) and run `yarn install` or `npm install` to retrieve all needed dependencies.
+- [x] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
+- [x] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
 Follow these steps for completing your project.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Implement the project on this Branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
@@ -60,12 +77,12 @@ Follow these steps for completing your project:
 
 Your finished project must include all of the following requirements:
 
-- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
-- [ ] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people)
-- [ ] Set the data you fetch to state
-- [ ] Map over the list and render a component for each character on the page
-- [ ] You must have at least one element for each star wars character in the data set
-- [ ] The elements must be styled with either SemanticUI or styled-components - don't rely on browser default styles
+- [x] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. (https://swapi.co/api/people/)
+- [x] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people)
+- [x] Set the data you fetch to state
+- [x] Map over the list and render a component for each character on the page
+- [x] You must have at least one element for each star wars character in the data set
+- [x] The elements must be styled with either SemanticUI or styled-components - don't rely on browser default styles
 - [ ] Finally, add at least two snapshot tests
 
 Required best practices:
